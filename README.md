@@ -1,13 +1,13 @@
 # javafx
 
+Pre-requisites to develop and run JavaFX apps:
+- OpenJDK 17.
+- Maven 3.x.
+
 ### helloworld
 
 Modified from https://github.com/openjfx/samples. \
 Tested on Windows 11, Mac OS 13.5, Ubuntu 22.04.
-
-Pre-requisites:
-- OpenJDK 17.
-- Maven 3.x.
 
 Two approaches to run the app:
 
