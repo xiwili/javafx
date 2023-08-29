@@ -1,0 +1,29 @@
+[versions]
+# Plugins
+javafx = "20.0.2"
+javafx-link = "2.25.0"
+javafx-module = "1.8.12"
+javafx-plugin = "0.0.13"
+spotless = "6.20.0"
+
+# Libraries
+assertj = "3.24.2"
+commons-collections = "4.4"
+commons-lang = "3.12.0"
+commons-io = "2.13.0"
+junit-jupiter = "5.10.0"
+junit-jupiter-platform = "1.10.0"
+
+[libraries]
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+commons-collections = { module = "org.apache.commons:commons-lang3", version.ref = "commons-collections" }
+commons-lang = { module = "org.apache.commons:commons-lang3", version.ref = "commons-lang" }
+commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
+junit-jupiter-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-jupiter-platform" }
+
+[plugins]
+javafx-link = { id = "org.beryx.jlink", version.ref = "javafx-link" }
+javafx-module = { id = "org.javamodularity.moduleplugin", version.ref = "javafx-module" }
+javafx-plugin = { id = "org.openjfx.javafxplugin", version.ref = "javafx-plugin" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
