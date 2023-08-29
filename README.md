@@ -46,11 +46,16 @@ The reason for using grandle is that gradle has built-in support for jpackage. W
 Two approaches to run the app:
 
 1. Use gradlew run
+- Mac/Linux
 ```
 cd helloworld-gradle
 ./gradlew clean run
 ```
-
+- Windows
+```
+cd helloworld-gradle
+.\gradlew.bat clean run
+```
 2. Use jpackage build the bundle of custom JRE and app. 
 - Mac/Linux
 ```
@@ -58,7 +63,12 @@ cd helloworld-gradle
 ./gradlew clean jpackage
 build/image/bin/helloworld
 ```
-After running the above gradle jpackage task, a few native installers are created. 
-- Mac: build/jpackage/helloworld-1.0.0.dmg, build/jpackage/helloworld-1.0.0.pkg & build/jpackage/helloworld-1.0.0.app. 
-- Linux:
-- Windows:  
+After running the above gradle jpackage task, native installer files are generated. For Mac, Mac: build/jpackage/helloworld-1.0.0.dmg, build/jpackage/helloworld-1.0.0.pkg & build/jpackage/helloworld-1.0.0.app. For Linux, 
+- Windows
+```
+cd helloworld-gradle
+.\gradlew.bat clean jpackage
+build\image\bin\helloworld
+```
+After running the above gradle jpackage task, A Windows installer is created. 
+  
