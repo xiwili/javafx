@@ -64,7 +64,7 @@ cd helloworld-gradle
 ./gradlew clean jpackage
 build/image/bin/helloworld
 ```
-After running the above gradle jpackage task, native installer files are generated. For Mac, build/jpackage/helloworld-1.0.0.dmg, build/jpackage/helloworld-1.0.0.pkg & build/jpackage/helloworld-1.0.0.app. For Linux, build/jpackage/helloworld_1.0.0-1_arm64.deb (Ubuntu, need to add installerType = 'deb' on build.gradle as the default installerType for Linux is rpm.) 
+After running the above gradle jpackage task, native installer files are generated. For Mac, build/jpackage/helloworld-1.0.0.dmg, build/jpackage/helloworld-1.0.0.pkg & build/jpackage/helloworld-1.0.0.app. For Linux, build/jpackage/helloworld_1.0.0-1_arm64.deb or uild/jpackage/helloworld_1.0.0-1_amd64.deb (Ubuntu, need to add installerType = 'deb' on build.gradle as the default installerType for Linux is rpm.) 
 
 - On Windows
 ```
