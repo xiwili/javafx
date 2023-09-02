@@ -13,7 +13,8 @@ JavaFX version is 20.0.1, defined in pom.xml. No need to install JavaFX separate
 
 Two approaches to run the app:
 
-1. Use javafx:run
+1. Use javafx:run\
+You can run the following commands on all the platforms (Mac/Linux/Windows).
 ```
 cd helloworld
 mvn javafx:run
